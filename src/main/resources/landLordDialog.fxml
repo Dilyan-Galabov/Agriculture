@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane fx:id="dialogPane" prefHeight="351.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LandLordCreateDialogController">
+   <header>
+      <Text fx:id="createLandLordText" strokeType="OUTSIDE" strokeWidth="0.0" text="Създаване на наемодател" textAlignment="CENTER" wrappingWidth="700.08349609375">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+   </header>
+   <content>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="nameLabel" layoutX="24.0" layoutY="56.0" text="Име:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" layoutX="67.0" layoutY="53.0" />
+            <Label fx:id="surnameLabel" layoutX="227.0" layoutY="56.0" prefHeight="19.0" prefWidth="68.0" text="Презиме:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="surNameTextField" layoutX="303.0" layoutY="53.0" />
+            <Label fx:id="familyLabel" layoutX="465.0" layoutY="56.0" prefHeight="19.0" prefWidth="68.0" text="Фамилия:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="familyTextField" layoutX="545.0" layoutY="53.0" />
+            <Label fx:id="pinLabel" layoutX="24.0" layoutY="97.0" text="ЕГН:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pinTextField" layoutX="67.0" layoutY="94.0" />
+            <TextField fx:id="settlementTextField" layoutX="303.0" layoutY="94.0" />
+            <Label fx:id="addressLabel" layoutX="478.0" layoutY="97.0" text="Адрес:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addressTextField" layoutX="545.0" layoutY="94.0" />
+            <Label fx:id="adressNumberLabel" layoutX="704.0" layoutY="97.0" text="№: ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adressNumberTextField" layoutX="736.0" layoutY="94.0" prefHeight="25.0" prefWidth="59.0" />
+            <Line endX="687.0" layoutX="112.0" layoutY="166.0" startX="-100.0" />
+            <Line endX="810.0" endY="27.068359375" layoutX="-15.0" layoutY="2.0" startX="31.5" startY="27.068359375" />
+            <Label layoutX="18.0" layoutY="3.0" text="Лична информация">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="138.0" text="Поземлени имоти">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="landLabel" layoutX="15.0" layoutY="181.0" text="Землище:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="landTextField" layoutX="92.0" layoutY="178.0" />
+            <Label fx:id="localityLabel" layoutX="255.0" layoutY="181.0" text="Местност:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="localityTextField" layoutX="336.0" layoutY="178.0" />
+            <Label fx:id="ekatteLabel" layoutX="496.0" layoutY="181.0" text="ЕКАТТЕ:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ekatteTextField" layoutX="567.0" layoutY="178.0" />
+            <Label fx:id="cadastreNumberLabel" layoutX="15.0" layoutY="222.0" text="№ кадастър:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cadastreNumberTextField" layoutX="106.0" layoutY="219.0" />
+            <Label fx:id="propertyNumberLabel" layoutX="264.0" layoutY="222.0" text="Имот №:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="propertyNumberTextField" layoutX="336.0" layoutY="219.0" />
+            <Label fx:id="areNumberLabel" layoutX="501.0" layoutY="222.0" text="Площ:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="areaTextField" layoutX="567.0" layoutY="219.0" prefHeight="25.0" prefWidth="104.0" />
+            <Label fx:id="nameLabel1" layoutX="679.0" layoutY="222.0" text="декара">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="createLandLordButton" layoutX="260.0" layoutY="286.0" mnemonicParsing="false" text="Създай запис">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="493.0" layoutY="286.0" mnemonicParsing="false" text="Откажи">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="createLandLordAndNewButton" layoutX="379.0" layoutY="286.0" mnemonicParsing="false" text="Създай и нов">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="settlementComboBox" layoutX="228.0" layoutY="94.0" prefHeight="25.0" prefWidth="67.0" />
+            <Button fx:id="clearFieldsButton" layoutX="694.0" layoutY="286.0" mnemonicParsing="false" text="Изчисти полета">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</DialogPane>
